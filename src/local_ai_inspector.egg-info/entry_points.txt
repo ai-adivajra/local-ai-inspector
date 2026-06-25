@@ -1,2 +1,0 @@
-[console_scripts]
-local-ai-inspector = local_ai_inspector.cli.main:main

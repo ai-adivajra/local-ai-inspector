@@ -13,7 +13,9 @@ authors = [
     { name = "Local AI Inspector Contributors" }
 ]
 
-dependencies = []
+dependencies = [
+    "psutil>=7.0"
+]
 
 [project.optional-dependencies]
 dev = [
