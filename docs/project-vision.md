@@ -1,6 +1,6 @@
 # Local AI Inspector
 
-**Version:** 1.0
+**Version:** 1.1
 **Status:** Accepted
 **Last updated:** 2026-06-25
 
@@ -78,13 +78,19 @@ The project remains observation-first.
 
 Every recommendation must be based on factual observations collected from the system.
 
+---
+
 ## Analyze before recommending
 
 Collected data should first be interpreted before proposing any optimization.
 
+---
+
 ## Explain every recommendation
 
 Users should always understand why a recommendation has been made.
+
+---
 
 ## Never modify the system automatically
 
@@ -92,23 +98,51 @@ The project only inspects and explains.
 
 System modifications always remain under the user's control.
 
+---
+
 ## Never interfere with the AI workload
 
 The inspector must never compete with the AI workloads it is inspecting.
 
 Its execution should remain lightweight, predictable and resource-efficient.
 
+---
+
+## On-demand by default
+
+The inspector is designed to run on demand.
+
+Continuous monitoring is optional and must always be explicitly enabled by the user.
+
+---
+
 ## Local first
 
 Core functionality should work entirely offline.
+
+---
 
 ## LLM optional
 
 Language models enhance explanations but are never required for the inspection engine itself.
 
+---
+
 ## Build trust through transparency
 
 Every observation, conclusion and recommendation should be traceable to collected evidence.
+
+---
+
+# Engineering Philosophy
+
+Local AI Inspector is developed incrementally.
+
+Every release must provide immediate practical value.
+
+The project favors simplicity, reliability and maintainability over feature count.
+
+Community adoption is a welcome consequence of building a genuinely useful tool—not an objective in itself.
 
 ---
 
@@ -118,13 +152,19 @@ Every observation, conclusion and recommendation should be traceable to collecte
 
 Collect reliable information about the hardware, operating system and local AI software stack.
 
+---
+
 ## 2. Validation
 
 Verify that every component required for local AI is correctly installed and configured.
 
+---
+
 ## 3. Optimization
 
 Identify configuration issues, bottlenecks and opportunities for improvement based on factual observations.
+
+---
 
 ## 4. Trust
 
@@ -165,4 +205,3 @@ Local AI Inspector aims to become a trusted companion for anyone building or ope
 Success is measured by reliability, transparency and usefulness rather than by the number of supported technologies.
 
 The project should help users make informed decisions, reduce troubleshooting time and increase confidence in their local AI infrastructure while remaining lightweight, predictable and fully under the user's control.
-
